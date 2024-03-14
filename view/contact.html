@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function validateForm() {
+            event.preventDefault();
+            let name = document.forms["contactForm"]["name"].value;
+            let array = [];
+            if (name === '') {
+                array.push('name');
+            }
+            let inquiry = document.forms["contactForm"]["inquiry"].value;
+            if (inquiry === '') {
+                array.push('inquiry');
+            }
+            let dateFrom = document.forms["contactForm"]["dateFrom"].value;
+            if (dateFrom === '') {
+                array.push('date from');
+            }
+            let dateTo = document.forms["contactForm"]["dateTo"].value;
+            if (dateTo === '') {
+                array.push('date to');
+            }
+            alert('The following fields are required: ' + array.join(','));
+        }
+    </script>
+</head>
+
+<body>
+    <a href="../novi.html"><img id="headerimg" src="../assets/banner.JPG" alt=""></a>
+    <div class="wrapper">
+        <header><img src="" alt="" /></header>
+        <tag></tag>
+        <tag />
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="toursandoffers.html">Tours and Offers</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1 class="main-title">Contact</h1>
+    </div>
+    <div class="form-container">
+        <form name="contactForm" onsubmit="return validateForm()">
+            <div class="input-element">
+                Name: <input type="text" name="name" />
+            </div>
+            <div class="input-element">
+                Title of inquiry: <input type="text" name="inquiry" />
+            </div>
+            <div class="input-element">
+                Date from: <input type="date" name="dateFrom" />
+            </div>
+            <div class="input-element">
+                Date to: <input type="date" name="dateTo" />
+            </div>
+            <div class="input-element">
+                Additional comments:
+            </div>
+            <div>
+                <textarea rows="5"></textarea>
+            </div>
+            <input class="input-element" type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
