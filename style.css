@@ -229,5 +229,207 @@ p {
 
 .transport-icon {
     padding: 5px;
-    width: 200px;
+    width: 110px;
+}
+
+.transportation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.transportation-item {
+    width: 31%; /* Adjust as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.transportation-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.transportation-item p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-content ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about-content .book-now {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.about-content .book-now:hover {
+    background-color: #0056b3;
+}
+
+.news {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.news-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.news h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.news-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.news-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tours-and-offers {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tours-and-offers h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tour-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.tour-card img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.tour-info {
+    padding: 20px;
+}
+
+.tour-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tour-info p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.special-offer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.special-offer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.special-offer p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
 }
