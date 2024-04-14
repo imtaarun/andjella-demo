@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../weather.js"></script>
+</head>
+
+<body>
+    <a href="../novi.html"><img id="headerimg" src="../assets/banner.JPG" alt=""></a>
+    <div class="wrapper">
+        <header><img src="" alt="" /></header>
+        <tag></tag>
+        <tag />
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="toursandoffers.html">Tours and Offers</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+        <h1 class="main-title">Weather</h1>
+    </div>
+    <section id="weather-table">
+        <div class="table-container">
+            <table class="weather-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Temperature (&deg;C)</th>
+                        <th>Wind Speed (km/h)</th>
+                    </tr>
+                </thead>
+                <tbody id="weather-data">
+                    <!-- Weather data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="last-updated">
+        <p>Last Updated: <span id="last-updated-time"></span></p>
+    </section>
+</body>
+
+</html>

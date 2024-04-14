@@ -7,29 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../style.css">
-    <script>
-        function validateForm() {
-            event.preventDefault();
-            let name = document.forms["contactForm"]["name"].value;
-            let array = [];
-            if (name === '') {
-                array.push('name');
-            }
-            let inquiry = document.forms["contactForm"]["inquiry"].value;
-            if (inquiry === '') {
-                array.push('inquiry');
-            }
-            let dateFrom = document.forms["contactForm"]["dateFrom"].value;
-            if (dateFrom === '') {
-                array.push('date from');
-            }
-            let dateTo = document.forms["contactForm"]["dateTo"].value;
-            if (dateTo === '') {
-                array.push('date to');
-            }
-            alert('The following fields are required: ' + array.join(','));
-        }
-    </script>
+    <script type="text/javascript" src="../contact.js"></script>
 </head>
 
 <body>
@@ -45,35 +23,46 @@
                 <li><a href="transportation.html">Transportation</a></li>
                 <li><a href="toursandoffers.html">Tours and Offers</a></li>
                 <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="weather.html">Weather</a></li>
             </ul>
         </nav>
-        <h1 class="main-title">Contact</h1>
     </div>
-    <div class="form-container">
-        <form name="contactForm" onsubmit="return validateForm()">
-            <div class="input-element">
-                Name: <input type="text" name="name" />
+    <section class="contact">
+        <div class="container">
+            <div class="contact-card">
+                <h2>Contact Us</h2>
+                <p>Have a question or inquiry? Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form id="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title of Inquiry:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-date">From Date:</label>
+                        <input type="date" id="from-date" name="from-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-date">To Date:</label>
+                        <input type="date" id="to-date" name="to-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
             </div>
-            <div class="input-element">
-                Title of inquiry: <input type="text" name="inquiry" />
+            <div id="success-popup" class="popup" style="display: none;">
+                <p>We have received your enquiry and will contact you shortly.</p>
+                <button id="close-popup" class="close-btn">Close</button>
             </div>
-            <div class="input-element">
-                Date from: <input type="date" name="dateFrom" />
-            </div>
-            <div class="input-element">
-                Date to: <input type="date" name="dateTo" />
-            </div>
-            <div class="input-element">
-                Additional comments:
-            </div>
-            <div>
-                <textarea rows="5"></textarea>
-            </div>
-            <input class="input-element" type="submit" />
-        </form>
-    </div>
+        </div>
+    </section>
 </body>
 
 </html>
